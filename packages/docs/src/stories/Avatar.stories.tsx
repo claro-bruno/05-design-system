@@ -7,8 +7,15 @@ export default {
   args: {
     src: 'https://github.com/claro-bruno.png',
     alt: 'Bruno Augusto',
-  } as Meta<AvatarProps>,
-}
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
+} as Meta<AvatarProps>
 export const Primary: StoryObj<AvatarProps> = {}
 
 export const WithFallback: StoryObj<AvatarProps> = {
